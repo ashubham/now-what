@@ -69,6 +69,9 @@ app.post('/next/:appId', (req, res) => __awaiter(this, void 0, void 0, function*
     }
     res.send({ error: 'No Predictions yet.' });
 }));
+app.get('*', (req, res) => {
+    res.send({ status: 'Not Implemented' });
+});
 logger.info(`Listening on PORT ${port}`);
 app.listen(port);
 //# sourceMappingURL=index.js.map
