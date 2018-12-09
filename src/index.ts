@@ -67,5 +67,9 @@ app.post('/next/:appId', async (req, res) => {
     res.send({error: 'No Predictions yet.'})
 })
 
+app.get('*', (req, res) => {
+    res.send({status: 'Not Implemented'});
+})
+
 logger.info(`Listening on PORT ${port}`);
 app.listen(port);
