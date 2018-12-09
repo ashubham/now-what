@@ -9,7 +9,7 @@
     "build": "npm run build-ts",
     "serve": "node build/index.js",
     "start": "npm run build && npm run serve",
-    "run-prod": "pm2 ecosystem.config.js"
+    "run-prod": "pm2 start ecosystem.config.js"
   },
   "repository": {
     "type": "git",
